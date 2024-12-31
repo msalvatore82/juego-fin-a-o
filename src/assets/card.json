@@ -1,0 +1,402 @@
+[
+  {
+    "Deportes": "El jugador de tenis rompió su raqueta.",
+    "Profesión": "La enfermera revisa el pulso del paciente.",
+    "Historia": "Julio César cruzó el Rubicón.",
+    "Comida": "La sopa caliente está en la mesa.",
+    "Animales": "El camaleón cambió de color.",
+    "Películas": "El Señor de los Anillos."
+  },
+  {
+    "Deportes": "El árbitro mostró la tarjeta roja.",
+    "Profesión": "El chef flambeó el postre frente a todos.",
+    "Historia": "Napoleón se coronó emperador.",
+    "Comida": "La pizza tiene queso derretido.",
+    "Animales": "El elefante bebé aprendió a nadar.",
+    "Películas": "Volver al Futuro."
+  },
+  {
+    "Deportes": "El nadador rompió el récord olímpico.",
+    "Profesión": "El astronauta plantó una bandera en la luna.",
+    "Historia": "La batalla de Waterloo terminó en derrota.",
+    "Comida": "Los tacos están rellenos de carne.",
+    "Animales": "La tortuga ganó la carrera al conejo.",
+    "Películas": "Jurassic Park."
+  },
+  {
+    "Deportes": "El equipo de rugby anotó un try increíble.",
+    "Profesión": "El mecánico arregló el motor en tiempo récord.",
+    "Historia": "La Revolución Industrial cambió el mundo.",
+    "Comida": "El pastel de chocolate tiene fresas encima.",
+    "Animales": "El tigre saltó desde el árbol para cazar.",
+    "Películas": "Harry Potter y la Piedra Filosofal."
+  },
+  {
+    "Deportes": "La pelota de golf cayó en el hoyo con un golpe.",
+    "Profesión": "El mago sacó un conejo de su sombrero.",
+    "Historia": "El Muro de Berlín fue derribado en 1989.",
+    "Comida": "El sushi de salmón está delicioso.",
+    "Animales": "El lobo aulló bajo la luna llena.",
+    "Películas": "Los Piratas del Caribe."
+  },
+  {
+    "Deportes": "El ciclista escaló la montaña más alta del recorrido.",
+    "Profesión": "La maestra explicó la lección de matemáticas.",
+    "Historia": "Cristóbal Colón navegó en busca de nuevas tierras.",
+    "Comida": "La ensalada tiene aderezo de mostaza y miel.",
+    "Animales": "El delfín saltó fuera del agua haciendo piruetas.",
+    "Películas": "Toy Story."
+  },
+  {
+    "Deportes": "El bateador golpeó la pelota fuera del estadio.",
+    "Profesión": "El juez dictó la sentencia del caso famoso.",
+    "Historia": "La peste negra devastó Europa durante la Edad Media.",
+    "Comida": "El pan recién horneado huele delicioso.",
+    "Animales": "El oso polar pescó un pez en el hielo.",
+    "Películas": "Titanic."
+  },
+  {
+    "Deportes": "El karateca derribó a su oponente con un movimiento preciso.",
+    "Profesión": "El albañil terminó la construcción del muro en un día.",
+    "Historia": "Alejandro Magno conquistó Persia en su juventud.",
+    "Comida": "El flan tiene caramelo en la parte superior.",
+    "Animales": "El loro repitió la frase que escuchó del marinero.",
+    "Películas": "El Rey León."
+  },
+  {
+    "Deportes": "El maratonista cruzó la meta después de 42 kilómetros.",
+    "Profesión": "El piloto aterrizó el avión en medio de la tormenta.",
+    "Historia": "El incendio de Roma ocurrió durante el reinado de Nerón.",
+    "Comida": "La hamburguesa tiene queso, tocino y cebolla.",
+    "Animales": "La jirafa estiró su cuello para alcanzar las hojas más altas.",
+    "Películas": "La Guerra de las Galaxias (Star Wars)."
+  },
+  {
+    "Deportes": "El surfista cabalgó la ola más grande del campeonato.",
+    "Profesión": "El veterinario curó la pata rota del caballo.",
+    "Historia": "La Declaración de Independencia fue firmada en 1776.",
+    "Comida": "Los churros se bañaron en chocolate caliente.",
+    "Animales": "El zorro se escondió en su madriguera.",
+    "Películas": "Buscando a Nemo."
+  },
+  {
+    "Deportes": "El boxeador esquivó todos los golpes en el último round.",
+    "Profesión": "El carpintero talló un mueble con detalles exquisitos.",
+    "Historia": "La Guerra Fría dividió al mundo en dos bloques.",
+    "Comida": "El guacamole se prepara con aguacate y limón fresco.",
+    "Animales": "La serpiente se deslizó silenciosamente por la arena.",
+    "Películas": "Indiana Jones y el Arca Perdida."
+  },
+  {
+    "Deportes": "El arquero detuvo el penalti decisivo en la final.",
+    "Profesión": "El bombero rescató a un gato atrapado en un árbol.",
+    "Historia": "Los vikingos exploraron América antes de Colón.",
+    "Comida": "La paella valenciana tiene pollo, conejo y mariscos.",
+    "Animales": "El panda comió bambú mientras estaba sentado.",
+    "Películas": "Avatar."
+  },
+  {
+    "Deportes": "El gimnasta hizo una rutina perfecta en las barras paralelas.",
+    "Profesión": "El barbero afiló la navaja antes del corte.",
+    "Historia": "La peste bubónica cambió la historia de Europa.",
+    "Comida": "La lasaña tiene carne, pasta y queso.",
+    "Animales": "El pingüino patinó sobre el hielo al buscar comida.",
+    "Películas": "Coco."
+  },
+  {
+    "Deportes": "El esquiador descendió la montaña a toda velocidad.",
+    "Profesión": "El fotógrafo capturó un amanecer espectacular en la playa.",
+    "Historia": "Los egipcios construyeron las pirámides como tumbas.",
+    "Comida": "El ceviche se marina con jugo de limón.",
+    "Animales": "El cangrejo caminó de lado por la arena.",
+    "Películas": "Frozen: Una Aventura Congelada."
+  },
+  {
+    "Deportes": "El patinador hizo un triple salto mortal.",
+    "Profesión": "El arqueólogo descubrió una momia en un sarcófago.",
+    "Historia": "La caída del Imperio Romano marcó el inicio de la Edad Media.",
+    "Comida": "Los tamales se envuelven en hojas de maíz.",
+    "Animales": "El koala duerme más de 18 horas al día.",
+    "Películas": "Shrek."
+  },
+  {
+    "Deportes": "El alpinista alcanzó la cima del Everest.",
+    "Profesión": "El programador corrigió un error en el código.",
+    "Historia": "La primera imprenta fue creada por Gutenberg.",
+    "Comida": "La fondue de queso se comparte con pan y vino.",
+    "Animales": "La rana saltó del estanque al jardín.",
+    "Películas": "La Bella y la Bestia."
+  },
+  {
+    "Deportes": "El snowboarder hizo piruetas en el aire.",
+    "Profesión": "El jardinero podó el arbusto con forma de animal.",
+    "Historia": "La independencia de México se celebró en 1810.",
+    "Comida": "Los buñuelos se fríen y se bañan en miel.",
+    "Animales": "La ballena azul nadó junto a su cría.",
+    "Películas": "Ratatouille."
+  },
+  {
+    "Deportes": "El jugador de hockey deslizó el disco hacia la portería.",
+    "Profesión": "El pescador lanzó la red para atrapar peces.",
+    "Historia": "Los mayas crearon un calendario basado en la astronomía.",
+    "Comida": "El ramen japonés lleva caldo, fideos y huevo.",
+    "Animales": "La mariposa batió sus alas y voló hacia las flores.",
+    "Películas": "Encanto."
+  },
+  {
+    "Deportes": "El saltador de altura rompió su propio récord mundial.",
+    "Profesión": "El electricista arregló los cables y devolvió la luz.",
+    "Historia": "El descubrimiento del fuego cambió la evolución humana.",
+    "Comida": "El helado de pistacho es muy popular.",
+    "Animales": "El canguro saltó con su cría en la bolsa.",
+    "Películas": "Blanca Nieves y los Siete Enanitos."
+  },
+  {
+    "Deportes": "El jugador de voleibol hizo un saque perfecto.",
+    "Profesión": "El escritor terminó su novela después de años de trabajo.",
+    "Historia": "La conquista del espacio comenzó con el lanzamiento del Sputnik.",
+    "Comida": "El chocolate caliente lleva canela y vainilla.",
+    "Animales": "La araña tejió una telaraña perfecta.",
+    "Películas": "La Pantera Rosa."
+  },
+  {
+    "Deportes": "El portero atrapó el balón en el último segundo.",
+    "Profesión": "El actor ganó un premio por su actuación.",
+    "Historia": "La Revolución Mexicana comenzó en 1910.",
+    "Comida": "El mole se sirve con pollo y arroz.",
+    "Animales": "El águila voló alto buscando su presa.",
+    "Películas": "Guardianes de la Galaxia."
+  },
+  {
+    "Deportes": "El corredor hizo un sprint final impresionante.",
+    "Profesión": "El taxista condujo rápido al aeropuerto.",
+    "Historia": "La Gran Muralla China fue construida para proteger el imperio.",
+    "Comida": "Las empanadas de carne tienen un relleno jugoso.",
+    "Animales": "El castor construyó una presa en el río.",
+    "Películas": "Los Juegos del Hambre."
+  },
+  {
+    "Deportes": "El esgrimista esquivó el ataque con habilidad.",
+    "Profesión": "El farmacéutico preparó la receta para el paciente.",
+    "Historia": "La caída de Troya marcó un momento épico.",
+    "Comida": "Los camarones al ajillo están bañados en mantequilla.",
+    "Animales": "La ardilla almacenó nueces para el invierno.",
+    "Películas": "Gladiador."
+  },
+  {
+    "Deportes": "El lanzador de jabalina alcanzó una distancia récord.",
+    "Profesión": "El periodista entrevistó a una celebridad en vivo.",
+    "Historia": "El Titanic se hundió en 1912.",
+    "Comida": "El arroz con leche lleva canela y azúcar.",
+    "Animales": "El búho miró fijamente en la oscuridad.",
+    "Películas": "Kung Fu Panda."
+  },
+  {
+    "Deportes": "El equipo de baloncesto encestó justo antes del silbato final.",
+    "Profesión": "El pintor creó un mural lleno de colores.",
+    "Historia": "La independencia de Argentina se declaró en 1816.",
+    "Comida": "El pastel de zanahoria tiene un glaseado de queso crema.",
+    "Animales": "El pavo real mostró sus plumas coloridas.",
+    "Películas": "El Diario de una Pasión."
+  },
+  {
+    "Deportes": "El piloto ganó el Gran Premio por milésimas.",
+    "Profesión": "El relojero reparó un reloj antiguo.",
+    "Historia": "El desembarco de Normandía fue clave en la guerra.",
+    "Comida": "La crema de espinacas es muy deliciosa.",
+    "Animales": "El caballo galopó por el campo.",
+    "Películas": "El Libro de la Selva."
+  },
+  {
+    "Deportes": "El tenista hizo un saque imparable.",
+    "Profesión": "El camarero sirvió el vino con elegancia.",
+    "Historia": "La primera máquina de vapor revolucionó la industria.",
+    "Comida": "La hamburguesa vegetariana tiene garbanzos y quinoa.",
+    "Animales": "La cabra saltó entre las rocas.",
+    "Películas": "Madagascar."
+  },
+  {
+    "Deportes": "El levantador rompió su récord mundial.",
+    "Profesión": "El piloto rescató personas atrapadas.",
+    "Historia": "La toma de la Bastilla marcó el inicio de la Revolución.",
+    "Comida": "Los churros con chocolate son deliciosos.",
+    "Animales": "El león rugió para defender su territorio.",
+    "Películas": "Mulan."
+  },
+  {
+    "Deportes": "El jugador de cricket golpeó la pelota fuera del campo.",
+    "Profesión": "El científico descubrió una fórmula importante.",
+    "Historia": "Los romanos construyeron acueductos.",
+    "Comida": "La ensalada César tiene lechuga y queso parmesano.",
+    "Animales": "El búfalo cruzó el río.",
+    "Películas": "El Rey Arturo."
+  },
+  {
+    "Deportes": "El luchador de sumo empujó a su oponente fuera del círculo.",
+    "Profesión": "El biólogo marino estudió a las ballenas.",
+    "Historia": "La llegada del hombre a la luna fue histórica.",
+    "Comida": "El gazpacho es una sopa fría.",
+    "Animales": "El flamenco se paró sobre una pata.",
+    "Películas": "Los Increíbles."
+  },
+  {
+    "Deportes": "El arquero acertó en el centro.",
+    "Profesión": "El diseñador creó un logotipo famoso.",
+    "Historia": "La caída de Constantinopla marcó el fin de la Edad Media.",
+    "Comida": "La crema pastelera rellena los eclairs.",
+    "Animales": "El coyote aulló en el desierto.",
+    "Películas": "Aladdin."
+  },
+  {
+    "Deportes": "El jugador de béisbol bateó un home run.",
+    "Profesión": "El relojero ajustó un reloj antiguo.",
+    "Historia": "La Guerra de Secesión dividió a Estados Unidos.",
+    "Comida": "El guiso de lentejas se cocina lento.",
+    "Animales": "El zorro se escondió entre los arbustos.",
+    "Películas": "Los Minions."
+  },
+  {
+    "Deportes": "El jugador de squash hizo un golpe imposible.",
+    "Profesión": "El zapatero reparó los tacones rotos.",
+    "Historia": "La invención del telescopio permitió explorar el cielo.",
+    "Comida": "La tarta de manzana tiene canela.",
+    "Animales": "El mapache abrió el bote de basura.",
+    "Películas": "La Vida es Bella."
+  },
+  {
+    "Deportes": "El equipo de remo llegó primero a la meta.",
+    "Profesión": "El estilista cortó y tiñó el cabello.",
+    "Historia": "La Ruta de la Seda conectó Asia y Europa.",
+    "Comida": "La tortilla española lleva papas y huevo.",
+    "Animales": "El ornitorrinco nadó rápido.",
+    "Películas": "El Gran Showman."
+  },
+  {
+    "Deportes": "El luchador ganó con una llave al cuello.",
+    "Profesión": "El abogado presentó pruebas en el juicio.",
+    "Historia": "La Revolución Rusa cambió a Rusia.",
+    "Comida": "El pan dulce tiene azúcar crujiente.",
+    "Animales": "El camello cruzó el desierto.",
+    "Películas": "Un Lugar en Silencio."
+  },
+  {
+    "Deportes": "El jugador de polo golpeó la pelota montando su caballo.",
+    "Profesión": "El músico tocó el violín en la ópera.",
+    "Historia": "La construcción del Taj Mahal es una historia de amor.",
+    "Comida": "Los nachos tienen queso y jalapeños.",
+    "Animales": "El perezoso se movió lentamente.",
+    "Películas": "El Laberinto del Fauno."
+  },
+  {
+    "Deportes": "El patinador rompió el récord en la pista de hielo.",
+    "Profesión": "El químico mezcló sustancias para crear una fórmula.",
+    "Historia": "La expedición de Magallanes dio la vuelta al mundo.",
+    "Comida": "Los espaguetis son un plato clásico italiano.",
+    "Animales": "El cocodrilo descansó al sol.",
+    "Películas": "La Sirenita."
+  },
+  {
+    "Deportes": "El gimnasta se colgó de los anillos y giró.",
+    "Profesión": "El piloto de drones grabó un paisaje increíble.",
+    "Historia": "La firma de la Constitución marcó el nacimiento de EE. UU.",
+    "Comida": "El bizcocho lleva crema batida.",
+    "Animales": "El pingüino cuidó su huevo.",
+    "Películas": "La Princesa Mononoke."
+  },
+  {
+    "Deportes": "El snowboarder bajó por la montaña haciendo giros.",
+    "Profesión": "El constructor diseñó un puente colgante.",
+    "Historia": "La abolición de la esclavitud fue un hito.",
+    "Comida": "El queso parmesano se espolvorea sobre la pasta.",
+    "Animales": "El gorila golpeó su pecho.",
+    "Películas": "Wall-E."
+  },
+  {
+    "Deportes": "El esquiador cruzó kilómetros de nieve.",
+    "Profesión": "El electricista conectó todos los cables.",
+    "Historia": "El Renacimiento marcó una nueva era.",
+    "Comida": "La sopa de calabaza se sirve con crutones.",
+    "Animales": "El dromedario cargó mercancías en el desierto.",
+    "Películas": "Cómo Entrenar a tu Dragón."
+  },
+  {
+    "Deportes": "El arquero desvió un tiro imposible.",
+    "Profesión": "El médico forense investigó pistas en un crimen.",
+    "Historia": "El desembarco de Colón cambió la historia.",
+    "Comida": "El croissant de mantequilla está recién hecho.",
+    "Animales": "El albatros voló grandes distancias.",
+    "Películas": "El Código Da Vinci."
+  },
+  {
+    "Deportes": "El jugador de rugby rompió la línea defensiva.",
+    "Profesión": "El ingeniero calculó la estructura del rascacielos.",
+    "Historia": "La Era de los Descubrimientos abrió nuevas rutas.",
+    "Comida": "Los rollitos primavera están rellenos de verduras.",
+    "Animales": "El erizo se enrolló para protegerse.",
+    "Películas": "La Ciudad de las Estrellas (La La Land)."
+  },
+  {
+    "Deportes": "El esquiador acrobático realizó un salto mortal.",
+    "Profesión": "El detective encontró pruebas bajo el piso.",
+    "Historia": "La llegada de los vikingos a América fue documentada.",
+    "Comida": "La sopa miso es un plato japonés.",
+    "Animales": "El zorrillo usó su olor para defenderse.",
+    "Películas": "Atrapado sin Salida."
+  },
+  {
+    "Deportes": "El jugador de hockey anotó un gol de esquina.",
+    "Profesión": "El enfermero administró medicamentos.",
+    "Historia": "La Revolución Científica cambió nuestra visión del universo.",
+    "Comida": "Los calamares fritos son crujientes y sabrosos.",
+    "Animales": "El puma acechó a su presa.",
+    "Películas": "Los Cazafantasmas."
+  },
+  {
+    "Deportes": "El windsurfista dominaba las olas del agua.",
+    "Profesión": "El traductor interpretó en vivo para un político.",
+    "Historia": "El ascenso del Imperio Romano marcó una nueva era.",
+    "Comida": "El hummus se sirve con pan pita.",
+    "Animales": "La iguana trepó buscando calor.",
+    "Películas": "12 Hombres en Pugna."
+  },
+  {
+    "Deportes": "El equipo de críquet celebró la victoria.",
+    "Profesión": "El escultor hizo una figura de mármol.",
+    "Historia": "La independencia de Chile fue en 1818.",
+    "Comida": "Las albóndigas están bañadas en salsa de tomate.",
+    "Animales": "El ciervo cruzó el río.",
+    "Películas": "Forrest Gump."
+  },
+  {
+    "Deportes": "El paracaidista aterrizó con precisión.",
+    "Profesión": "El marinero navegó por aguas turbulentas.",
+    "Historia": "La Revolución Cubana fue liderada por Fidel Castro.",
+    "Comida": "La quiche es ligera y sabrosa.",
+    "Animales": "El oso pardo hibernó en invierno.",
+    "Películas": "El Gran Pez."
+  },
+  {
+    "Deportes": "El montañista escaló el glaciar con crampones.",
+    "Profesión": "El profesor explicó la física cuántica.",
+    "Historia": "La Guerra de los Cien Años fue entre Francia e Inglaterra.",
+    "Comida": "La arepa venezolana se puede rellenar de carne o queso.",
+    "Animales": "El gorrión voló buscando comida.",
+    "Películas": "El Pianista."
+  },
+  {
+    "Deportes": "El jugador de bádminton devolvió el volante con fuerza.",
+    "Profesión": "El taxidermista preparó un animal para el museo.",
+    "Historia": "La batalla de Hastings ocurrió en 1066.",
+    "Comida": "La carbonara lleva huevo, panceta y queso.",
+    "Animales": "El búfalo avanzó por la sabana.",
+    "Películas": "Los Otros."
+  },
+  {
+    "Deportes": "El saltador alcanzó una altura impresionante.",
+    "Profesión": "El chef pastelero decoró un pastel gigante.",
+    "Historia": "La dinastía Ming gobernó China durante 300 años.",
+    "Comida": "La sopa de tortilla lleva queso y crema.",
+    "Animales": "El murciélago voló en la cueva oscura.",
+    "Películas": "La Vida de Pi."
+  }
+]
