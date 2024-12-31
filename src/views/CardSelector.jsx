@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import cards from "../assets/card.json"; // Asegúrate de tener el JSON de cartas
+import { useState, useEffect } from "react";
+import cards from "../assets/card.json";
 import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 import WorkIcon from "@mui/icons-material/Work";
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
@@ -12,7 +12,6 @@ const CardGame = () => {
   const [currentCard, setCurrentCard] = useState(null);
   const navigate = useNavigate();
 
-  // Al cargar el componente, recuperar la carta guardada si existe
   useEffect(() => {
     const savedCard = sessionStorage.getItem("selectedCard");
     if (savedCard) {
@@ -24,12 +23,10 @@ const CardGame = () => {
     const randomIndex = Math.floor(Math.random() * cards.length);
     const selectedCard = cards[randomIndex];
 
-    // Guardar la carta en sessionStorage
     sessionStorage.setItem("selectedCard", JSON.stringify(selectedCard));
     setCurrentCard(selectedCard);
   };
 
-  // Colores e íconos para cada categoría
   const categoryStyles = {
     Deportes: { color: "#1E90FF", icon: <SportsSoccerIcon style={{ color: "white" }} /> },
     Profesión: { color: "#FF1493", icon: <WorkIcon style={{ color: "white" }} /> },
@@ -68,7 +65,6 @@ const CardGame = () => {
             backgroundColor: "#f9f9f9",
           }}
         >
-          {/* Mostrar contenido sin nombres de categorías */}
           {Object.keys(currentCard).map((category) => (
             <div
               key={category}
@@ -78,7 +74,6 @@ const CardGame = () => {
                 marginBottom: "15px",
               }}
             >
-              {/* Circulito con color e ícono */}
               <div
                 style={{
                   width: "40px",
@@ -93,13 +88,11 @@ const CardGame = () => {
               >
                 {categoryStyles[category].icon}
               </div>
-              {/* Solo contenido */}
               <p style={{ margin: "0", fontSize: "16px" }}>{currentCard[category]}</p>
             </div>
           ))}
         </div>
       )}
-      {/* Referencias fijas en el margen derecho */}
       <div
         style={{
           position: "fixed",

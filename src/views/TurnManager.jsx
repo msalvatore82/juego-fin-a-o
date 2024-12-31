@@ -4,20 +4,18 @@ import WheelComponent from "./WheelComponent";
 import { useNavigate } from "react-router-dom";
 
 const TurnManager = () => {
-  const [turn, setTurn] = useState(0); // Estado para el turno actual
-  const [teams, setTeams] = useState([]); // Estado para almacenar los equipos
-  const [selectedCategory, setSelectedCategory] = useState(null); // Estado para la categoría seleccionada
-  const [openModal, setOpenModal] = useState(false); // Estado para abrir y cerrar el modal
-  const [modalMessage, setModalMessage] = useState(""); // Mensaje que se mostrará en el modal
+  const [turn, setTurn] = useState(0);
+  const [teams, setTeams] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [openModal, setOpenModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
   const navigate = useNavigate();
 
-  // Recuperar los equipos desde sessionStorage
   useEffect(() => {
     const storedTeams = JSON.parse(sessionStorage.getItem("teams")) || [];
-    // Asegurarse de que cada equipo tenga un array para wonCorona
     const updatedTeams = storedTeams.map((team) => ({
       ...team,
-      wonCorona: team.wonCorona || [], // Inicializar wonCorona como un array vacío si no existe
+      wonCorona: team.wonCorona || [],
     }));
     setTeams(updatedTeams);
 
@@ -25,43 +23,33 @@ const TurnManager = () => {
     setSelectedCategory(storedCategory);
   }, []);
 
-  // Función para manejar el cambio de turno entre los equipos
   const handleTurnChange = () => {
     setTurn((prevTurn) => {
-      // Si el turno es el último, volver al primero
       return prevTurn === teams.length - 1 ? 0 : prevTurn + 1;
     });
   };
 
-  // Función para manejar cuando un jugador gana una corona
   const handleWinCorona = () => {
     if (selectedCategory && selectedCategory.includes("👑")) {
-      // Obtener el equipo actual
       const winningTeam = teams[turn];
 
-      // Comprobar si la corona ya ha sido ganada por este equipo
       if (winningTeam.wonCorona.includes(selectedCategory)) {
-        // Si la corona ya existe, mostrar el modal
         setModalMessage("¡Este equipo ya ha ganado esta corona!");
-        setOpenModal(true); // Abrir el modal
-        return; // Si ya tiene la corona, no agregarla de nuevo
+        setOpenModal(true);
+        return;
       }
 
-      // Añadir la nueva corona a la lista de coronas ganadas por el equipo
       const updatedTeams = [...teams];
       const currentTeam = updatedTeams[turn];
 
-      currentTeam.wonCorona = [...currentTeam.wonCorona, selectedCategory]; // Añadir la nueva corona
+      currentTeam.wonCorona = [...currentTeam.wonCorona, selectedCategory];
 
-      // Actualizar el equipo en el estado
       setTeams(updatedTeams);
 
-      // Guardar la lista de equipos actualizada en sessionStorage
       sessionStorage.setItem("teams", JSON.stringify(updatedTeams));
     }
   };
 
-  // Función para cerrar el modal
   const handleCloseModal = () => {
     setOpenModal(false);
   };
@@ -69,7 +57,6 @@ const TurnManager = () => {
   return (
     <div>
       <Box display="flex" justifyContent="space-between" alignItems="flex-start">
-        {/* Columna izquierda: Mostrar equipo actual y corona ganada */}
         <Box
           style={{
             width: "40%",
@@ -99,7 +86,6 @@ const TurnManager = () => {
               Coronas ganadas por el equipo:
             </div>
             <ul>
-              {/* Mostrar las coronas ganadas por el equipo actual */}
               {Array.isArray(teams[turn]?.wonCorona) &&
                 teams[turn]?.wonCorona.map((corona, index) => (
                   <li style={{ fontSize: "20px" }} key={index}>{corona}</li>
@@ -107,7 +93,6 @@ const TurnManager = () => {
             </ul>
             <h4>Por equipos:</h4>
 
-            {/* Tabla de coronas ganadas por equipos */}
             <TableContainer component={Paper}>
               <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
@@ -122,10 +107,10 @@ const TurnManager = () => {
                       key={index}
                       sx={{
                         "&:nth-of-type(odd)": {
-                          backgroundColor: "#f9f9f9", // Fondo alternado en filas impares
+                          backgroundColor: "#f9f9f9",
                         },
                         "&:hover": {
-                          backgroundColor: "#f1f1f1", // Hover effect
+                          backgroundColor: "#f1f1f1",
                         },
                       }}
                     >
@@ -149,7 +134,6 @@ const TurnManager = () => {
           </Button>
         </Box>
 
-        {/* Columna derecha: Mostrar la ruleta */}
         <Box
           style={{
             width: "60%",
@@ -158,12 +142,11 @@ const TurnManager = () => {
         >
           <WheelComponent
             turn={turn}
-            onCategorySelected={(category) => setSelectedCategory(category)} // Pasar la categoría seleccionada
+            onCategorySelected={(category) => setSelectedCategory(category)}
           />
         </Box>
       </Box>
 
-      {/* Modal para cuando un equipo ya ha ganado una corona */}
       <Dialog open={openModal} onClose={handleCloseModal}>
         <DialogTitle>¡Error!</DialogTitle>
         <DialogContent>{modalMessage}</DialogContent>

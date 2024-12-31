@@ -1,4 +1,3 @@
-import React from "react";
 import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 import WorkIcon from "@mui/icons-material/Work";
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";

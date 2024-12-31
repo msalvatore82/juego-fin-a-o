@@ -1,7 +1,15 @@
-import { useState, useEffect } from 'react';
-import { Box, Typography, Button, Container, Grid, TextField, Modal } from '@mui/material';
-import CardDisplay from "./CardDisplay"; // Importa el componente reutilizable de la carta
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import {
+  Box,
+  Typography,
+  Button,
+  Container,
+  Grid,
+  TextField,
+  Modal,
+} from "@mui/material";
+import CardDisplay from "./CardDisplay";
+import { useNavigate } from "react-router-dom";
 
 const Timer = () => {
   const [minutes, setMinutes] = useState(1);
@@ -9,14 +17,13 @@ const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(null);
   const [isRunning, setIsRunning] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [backgroundFlash, setBackgroundFlash] = useState('black');
+  const [backgroundFlash, setBackgroundFlash] = useState("black");
   const [showExplosion, setShowExplosion] = useState(false);
-  const [showCard, setShowCard] = useState(false); // Nueva bandera para mostrar la carta
+  const [showCard, setShowCard] = useState(false); 
   const [currentCard, setCurrentCard] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Recuperar la carta seleccionada del sessionStorage
     const savedCard = sessionStorage.getItem("selectedCard");
     if (savedCard) {
       setCurrentCard(JSON.parse(savedCard));
@@ -30,7 +37,7 @@ const Timer = () => {
         setTimeLeft((prev) => prev - 0.01);
 
         if (timeLeft <= 10) {
-          setBackgroundFlash((prev) => (prev === 'black' ? 'red' : 'black'));
+          setBackgroundFlash((prev) => (prev === "black" ? "red" : "black"));
         }
       }, 10);
     } else if (timeLeft <= 0 && isRunning) {
@@ -46,7 +53,7 @@ const Timer = () => {
     setIsRunning(true);
     setIsModalOpen(true);
     setShowExplosion(false);
-    setShowCard(false); // Asegurarnos de que la carta no esté visible al iniciar
+    setShowCard(false);
   };
 
   const handleReset = () => {
@@ -55,7 +62,7 @@ const Timer = () => {
     setMinutes(1);
     setSeconds(0);
     setIsModalOpen(false);
-    setBackgroundFlash('black');
+    setBackgroundFlash("black");
     setShowExplosion(false);
     setShowCard(false);
   };
@@ -64,13 +71,15 @@ const Timer = () => {
     const mins = Math.floor((timeLeft || 0) / 60);
     const secs = Math.floor(timeLeft % 60);
     const millis = Math.floor((timeLeft % 1) * 100);
-    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}:${millis.toString().padStart(2, '0')}`;
+    return `${mins.toString().padStart(2, "0")}:${secs
+      .toString()
+      .padStart(2, "0")}:${millis.toString().padStart(2, "0")}`;
   };
 
   const playAlarm = () => {
-    const audio = new Audio('/src/assets/explosion-47821.mp3');
+    const audio = new Audio("/src/assets/explosion-47821.mp3");
     audio.play().catch((error) => {
-      console.error('Error al reproducir el audio:', error);
+      console.error("Error al reproducir el audio:", error);
     });
   };
 
@@ -78,9 +87,9 @@ const Timer = () => {
     <Container maxWidth="sm">
       <Box
         sx={{
-          textAlign: 'center',
-          backgroundColor: '#f5f5f5',
-          borderRadius: '8px',
+          textAlign: "center",
+          backgroundColor: "#f5f5f5",
+          borderRadius: "8px",
           p: 4,
           boxShadow: 3,
         }}
@@ -99,7 +108,9 @@ const Timer = () => {
                 label="Minutos"
                 type="number"
                 value={minutes}
-                onChange={(e) => setMinutes(Math.max(0, parseInt(e.target.value) || 0))}
+                onChange={(e) =>
+                  setMinutes(Math.max(0, parseInt(e.target.value) || 0))
+                }
                 fullWidth
               />
             </Grid>
@@ -108,7 +119,11 @@ const Timer = () => {
                 label="Segundos"
                 type="number"
                 value={seconds}
-                onChange={(e) => setSeconds(Math.max(0, Math.min(59, parseInt(e.target.value) || 0)))}
+                onChange={(e) =>
+                  setSeconds(
+                    Math.max(0, Math.min(59, parseInt(e.target.value) || 0))
+                  )
+                }
                 fullWidth
               />
             </Grid>
@@ -137,7 +152,7 @@ const Timer = () => {
             variant="contained"
             color="info"
             fullWidth
-            onClick={() => navigate('/')}
+            onClick={() => navigate("/")}
             sx={{ mt: 4 }}
           >
             Volver al Home
@@ -147,30 +162,40 @@ const Timer = () => {
         <Modal open={isModalOpen} onClose={handleReset}>
           <Box
             sx={{
-              position: 'fixed',
+              position: "fixed",
               top: 0,
               left: 0,
-              width: '100%',
-              height: '100%',
-              backgroundColor: showExplosion ? 'black' : backgroundFlash,
-              color: 'white',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              textAlign: 'center',
-              overflow: 'hidden',
-              flexDirection: 'column',
-              gap: '20px',
+              width: "100%",
+              height: "100%",
+              backgroundColor: showExplosion ? "black" : backgroundFlash,
+              color: "white",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              overflow: "hidden",
+              flexDirection: "column",
+              gap: "20px",
             }}
           >
             {showExplosion ? (
-              <div style={{ textAlign: 'center' }}>
+              <div style={{ textAlign: "center" }}>
                 <img
                   src="https://media.giphy.com/media/oe33xf3B50fsc/giphy.gif"
                   alt="Explosion"
-                  style={{ width: '500px', height: 'auto', marginBottom: '20px' }}
+                  style={{
+                    width: "500px",
+                    height: "auto",
+                    marginBottom: "20px",
+                  }}
                 />
-                <Box sx={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: "20px",
+                    justifyContent: "center",
+                  }}
+                >
                   <Button
                     variant="contained"
                     color="primary"
@@ -189,9 +214,33 @@ const Timer = () => {
                 </Box>
               </div>
             ) : (
-              <Typography sx={{ fontFamily: 'monospace', fontSize: '200px' }}>
-                {formatTime()}
-              </Typography>
+              <>
+                <Typography sx={{ fontFamily: "monospace", fontSize: "200px" }}>
+                  {formatTime()}
+                </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: "20px",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={() => setShowCard(true)}
+                  >
+                    Mostrar Carta
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="error"
+                    onClick={handleReset}
+                  >
+                    Detener / Volver
+                  </Button>
+                </Box>
+              </>
             )}
           </Box>
         </Modal>
@@ -199,21 +248,21 @@ const Timer = () => {
         <Modal open={showCard} onClose={() => setShowCard(false)}>
           <Box
             sx={{
-              position: 'fixed',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              backgroundColor: 'white',
-              color: 'black',
-              padding: '20px',
-              borderRadius: '8px',
+              position: "fixed",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              backgroundColor: "white",
+              color: "black",
+              padding: "20px",
+              borderRadius: "8px",
               boxShadow: 24,
-              maxWidth: '500px',
-              width: '90%',
-              textAlign: 'center',
+              maxWidth: "500px",
+              width: "90%",
+              textAlign: "center",
             }}
           >
-            <CardDisplay card={currentCard} /> 
+            <CardDisplay card={currentCard} />
             <Button
               variant="contained"
               color="primary"
